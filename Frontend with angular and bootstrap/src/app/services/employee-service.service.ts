@@ -1,0 +1,58 @@
+import { HttpClient, HttpParams } from '@angular/common/http';
+import { Injectable } from '@angular/core';
+import {
+  Employee,
+  PaginatedResult,
+  PaginatedSearch,
+} from '../models/models.model';
+import { Observable } from 'rxjs';
+
+@Injectable({
+  providedIn: 'root',
+})
+export class EmployeeService {
+  private apiUrl = 'https://localhost:7290/api/Employee';
+
+  constructor(private http: HttpClient) {}
+
+  getAllEmployees(): Observable<Employee[]> {
+    return this.http.get<Employee[]>(this.apiUrl);
+  }
+
+  getEmployeeById(id: number): Observable<Employee> {
+    return this.http.get<Employee>(`${this.apiUrl}/GetEmployee/${id}`);
+  }
+  createEmployee(employee: Employee): Observable<any> {
+    return this.http.post(`${this.apiUrl}/CreateEmployee`, employee);
+  }
+
+  updateEmployee(employee: Employee): Observable<any> {
+    return this.http.put(`${this.apiUrl}/UpdateEmployee`, employee);
+  }
+
+  deleteEmployee(id: number): Observable<any> {
+    return this.http.delete(`${this.apiUrl}/DeleteEmpoyee/${id}`);
+  }
+
+  search(key: string): Observable<Employee[]> {
+    let params = new HttpParams().set('key', key);
+    return this.http.get<Employee[]>(`${this.apiUrl}/Search`, { params });
+  }
+
+  getPaginated(
+    request: PaginatedSearch
+  ): Observable<PaginatedResult<Employee>> {
+    let params = new HttpParams()
+      .set('pageNumber', request.pageNumber.toString())
+      .set('pageSize', request.pageSize.toString());
+
+    if (request.key) {
+      params = params.set('searchTerm', request.key);
+    }
+
+    return this.http.get<PaginatedResult<Employee>>(
+      `${this.apiUrl}/Paginated`,
+      { params }
+    );
+  }
+}
