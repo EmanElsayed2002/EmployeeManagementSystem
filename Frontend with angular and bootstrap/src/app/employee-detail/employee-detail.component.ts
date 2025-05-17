@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Employee } from '../models/models.model';
 import { ActivatedRoute, Router } from '@angular/router';
 import { EmployeeService } from '../services/employee-service.service';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-employee-detail',
@@ -16,7 +17,8 @@ export class EmployeeDetailComponent {
   constructor(
     private route: ActivatedRoute,
     private router: Router,
-    private employeeService: EmployeeService
+    private employeeService: EmployeeService,
+    private toaster: ToastrService
   ) {}
 
   ngOnInit(): void {
@@ -28,6 +30,7 @@ export class EmployeeDetailComponent {
   }
 
   loadEmployee(id: number): void {
+    console.log(id ?? 'h');
     this.loading = true;
     this.employeeService.getEmployeeById(id).subscribe(
       (employee: any) => {
@@ -36,7 +39,8 @@ export class EmployeeDetailComponent {
         this.loading = false;
       },
       () => {
-        console.error('Error loading employee');
+        this.toaster.error('Error loading employee', 'Error');
+
         this.loading = false;
         this.error = true;
       }
@@ -56,10 +60,12 @@ export class EmployeeDetailComponent {
     ) {
       this.employeeService.deleteEmployee(this.employee.id).subscribe(
         () => {
+          this.toaster.success('Employee deleted Successfully', 'Success 🎉');
+
           this.router.navigate(['/employees']);
         },
         () => {
-          console.error('Error deleting employee');
+          this.toaster.error('Error deleting employee', 'Error');
         }
       );
     }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\CONNECT\\source\\repos\\Task\\Core\\Core.csproj": {}
+    "C:\\EmployeeManagementSystem\\Backend with Asp.net Web Api\\Core\\Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\CONNECT\\source\\repos\\Task\\Core\\Core.csproj": {
+    "C:\\EmployeeManagementSystem\\Backend with Asp.net Web Api\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\CONNECT\\source\\repos\\Task\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\EmployeeManagementSystem\\Backend with Asp.net Web Api\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\CONNECT\\source\\repos\\Task\\Core\\Core.csproj",
+        "projectPath": "C:\\EmployeeManagementSystem\\Backend with Asp.net Web Api\\Core\\Core.csproj",
         "packagesPath": "C:\\Users\\CONNECT\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\CONNECT\\source\\repos\\Task\\Core\\obj\\",
+        "outputPath": "C:\\EmployeeManagementSystem\\Backend with Asp.net Web Api\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\CONNECT\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -29,8 +29,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\CONNECT\\source\\repos\\Task\\Services\\Services.csproj": {
-                "projectPath": "C:\\Users\\CONNECT\\source\\repos\\Task\\Services\\Services.csproj"
+              "C:\\EmployeeManagementSystem\\Backend with Asp.net Web Api\\Services\\Services.csproj": {
+                "projectPath": "C:\\EmployeeManagementSystem\\Backend with Asp.net Web Api\\Services\\Services.csproj"
               }
             }
           }
@@ -83,14 +83,14 @@
         }
       }
     },
-    "C:\\Users\\CONNECT\\source\\repos\\Task\\Data\\Data.csproj": {
+    "C:\\EmployeeManagementSystem\\Backend with Asp.net Web Api\\Data\\Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\CONNECT\\source\\repos\\Task\\Data\\Data.csproj",
+        "projectUniqueName": "C:\\EmployeeManagementSystem\\Backend with Asp.net Web Api\\Data\\Data.csproj",
         "projectName": "Data",
-        "projectPath": "C:\\Users\\CONNECT\\source\\repos\\Task\\Data\\Data.csproj",
+        "projectPath": "C:\\EmployeeManagementSystem\\Backend with Asp.net Web Api\\Data\\Data.csproj",
         "packagesPath": "C:\\Users\\CONNECT\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\CONNECT\\source\\repos\\Task\\Data\\obj\\",
+        "outputPath": "C:\\EmployeeManagementSystem\\Backend with Asp.net Web Api\\Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\CONNECT\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -150,14 +150,14 @@
         }
       }
     },
-    "C:\\Users\\CONNECT\\source\\repos\\Task\\Infrastructure\\Infrastructure.csproj": {
+    "C:\\EmployeeManagementSystem\\Backend with Asp.net Web Api\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\CONNECT\\source\\repos\\Task\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "C:\\EmployeeManagementSystem\\Backend with Asp.net Web Api\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "C:\\Users\\CONNECT\\source\\repos\\Task\\Infrastructure\\Infrastructure.csproj",
+        "projectPath": "C:\\EmployeeManagementSystem\\Backend with Asp.net Web Api\\Infrastructure\\Infrastructure.csproj",
         "packagesPath": "C:\\Users\\CONNECT\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\CONNECT\\source\\repos\\Task\\Infrastructure\\obj\\",
+        "outputPath": "C:\\EmployeeManagementSystem\\Backend with Asp.net Web Api\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\CONNECT\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -175,8 +175,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\CONNECT\\source\\repos\\Task\\Data\\Data.csproj": {
-                "projectPath": "C:\\Users\\CONNECT\\source\\repos\\Task\\Data\\Data.csproj"
+              "C:\\EmployeeManagementSystem\\Backend with Asp.net Web Api\\Data\\Data.csproj": {
+                "projectPath": "C:\\EmployeeManagementSystem\\Backend with Asp.net Web Api\\Data\\Data.csproj"
               }
             }
           }
@@ -233,14 +233,14 @@
         }
       }
     },
-    "C:\\Users\\CONNECT\\source\\repos\\Task\\Services\\Services.csproj": {
+    "C:\\EmployeeManagementSystem\\Backend with Asp.net Web Api\\Services\\Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\CONNECT\\source\\repos\\Task\\Services\\Services.csproj",
+        "projectUniqueName": "C:\\EmployeeManagementSystem\\Backend with Asp.net Web Api\\Services\\Services.csproj",
         "projectName": "Services",
-        "projectPath": "C:\\Users\\CONNECT\\source\\repos\\Task\\Services\\Services.csproj",
+        "projectPath": "C:\\EmployeeManagementSystem\\Backend with Asp.net Web Api\\Services\\Services.csproj",
         "packagesPath": "C:\\Users\\CONNECT\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\CONNECT\\source\\repos\\Task\\Services\\obj\\",
+        "outputPath": "C:\\EmployeeManagementSystem\\Backend with Asp.net Web Api\\Services\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\CONNECT\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -258,11 +258,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\CONNECT\\source\\repos\\Task\\Data\\Data.csproj": {
-                "projectPath": "C:\\Users\\CONNECT\\source\\repos\\Task\\Data\\Data.csproj"
+              "C:\\EmployeeManagementSystem\\Backend with Asp.net Web Api\\Data\\Data.csproj": {
+                "projectPath": "C:\\EmployeeManagementSystem\\Backend with Asp.net Web Api\\Data\\Data.csproj"
               },
-              "C:\\Users\\CONNECT\\source\\repos\\Task\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\CONNECT\\source\\repos\\Task\\Infrastructure\\Infrastructure.csproj"
+              "C:\\EmployeeManagementSystem\\Backend with Asp.net Web Api\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "C:\\EmployeeManagementSystem\\Backend with Asp.net Web Api\\Infrastructure\\Infrastructure.csproj"
               }
             }
           }

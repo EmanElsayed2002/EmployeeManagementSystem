@@ -3,6 +3,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { EmployeeService } from '../services/employee-service.service';
 import { Employee } from '../models/models.model';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-employee-form',
@@ -20,7 +21,8 @@ export class EmployeeFormComponent {
     private fb: FormBuilder,
     private route: ActivatedRoute,
     private router: Router,
-    private employeeService: EmployeeService
+    private employeeService: EmployeeService,
+    private toaster: ToastrService
   ) {}
 
   ngOnInit(): void {
@@ -47,16 +49,20 @@ export class EmployeeFormComponent {
   loadEmployee(id: number): void {
     this.loading = true;
     this.employeeService.getEmployeeById(id).subscribe(
-      (employee: Employee) => {
+      (employee: any) => {
+        console.log(employee.data);
         this.employeeForm.patchValue({
-          name: employee.firstName + ' ' + employee.lastName,
-          email: employee.email,
-          position: employee.position,
+          firstname: employee.data.firstName,
+          lastname: employee.data.lastName,
+          email: employee.data.email,
+          position: employee.data.position,
         });
+
         this.loading = false;
       },
       () => {
-        console.error('Error loading employee');
+        this.toaster.error('Error loading employee', 'Error');
+
         this.loading = false;
       }
     );
@@ -78,21 +84,27 @@ export class EmployeeFormComponent {
     if (this.isEditMode) {
       this.employeeService.updateEmployee(employeeData).subscribe(
         () => {
+          this.toaster.success('Employee Updated Successfully', 'Success 🎉');
           this.router.navigate(['/employees']);
           this.loading = false;
         },
         () => {
-          console.error('Error updating employee');
+          this.toaster.error('Error updating employee', 'Error');
+
           this.loading = false;
         }
       );
     } else {
       this.employeeService.createEmployee(employeeData).subscribe(
         () => {
+          this.toaster.success('Employee Created Successfully', 'Success 🎉');
+
           this.router.navigate(['/employees']);
           this.loading = false;
         },
         () => {
+          this.toaster.error('Dublicate Email Not Allowed', 'Error');
+
           console.error('Error creating employee');
           this.loading = false;
         }

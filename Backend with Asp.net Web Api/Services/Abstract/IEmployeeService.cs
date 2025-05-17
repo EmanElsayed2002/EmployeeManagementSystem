@@ -1,6 +1,7 @@
 ﻿using OneOf;
 using Services.DTO;
 using Services.Errors;
+using Services.Implementation;
 
 namespace Services.Abstract
 {
@@ -13,7 +14,7 @@ namespace Services.Abstract
         Task<OneOf<Error, ReadEmployeeDTO>> UpdateEmployee(UpdateEmployeeDTO request);
         Task<OneOf<Error, bool>> DeleteEmployee(int id);
 
-        Task<OneOf<Error, IEnumerable<ReadEmployeeDTO>>> Search(string keyword);
-        Task<OneOf<Error, IEnumerable<ReadEmployeeDTO>>> Paginated(int pageNumber, int pageSize);
+        Task<OneOf<Error, PaginatedResponse>> Search(string keyword, int pageSize, int pageNumber);
+        Task<OneOf<Error, PaginatedResponse>> Paginated(int pageNumber, int pageSize);
     }
 }

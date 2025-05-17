@@ -3236,11 +3236,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\CONNECT\\source\\repos\\Task\\Core\\Core.csproj",
+      "projectUniqueName": "C:\\EmployeeManagementSystem\\Backend with Asp.net Web Api\\Core\\Core.csproj",
       "projectName": "Core",
-      "projectPath": "C:\\Users\\CONNECT\\source\\repos\\Task\\Core\\Core.csproj",
+      "projectPath": "C:\\EmployeeManagementSystem\\Backend with Asp.net Web Api\\Core\\Core.csproj",
       "packagesPath": "C:\\Users\\CONNECT\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\CONNECT\\source\\repos\\Task\\Core\\obj\\",
+      "outputPath": "C:\\EmployeeManagementSystem\\Backend with Asp.net Web Api\\Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\CONNECT\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3258,8 +3258,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\CONNECT\\source\\repos\\Task\\Services\\Services.csproj": {
-              "projectPath": "C:\\Users\\CONNECT\\source\\repos\\Task\\Services\\Services.csproj"
+            "C:\\EmployeeManagementSystem\\Backend with Asp.net Web Api\\Services\\Services.csproj": {
+              "projectPath": "C:\\EmployeeManagementSystem\\Backend with Asp.net Web Api\\Services\\Services.csproj"
             }
           }
         }

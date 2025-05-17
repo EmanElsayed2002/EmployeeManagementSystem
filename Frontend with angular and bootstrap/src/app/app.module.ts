@@ -8,6 +8,10 @@ import { EmployeeFormComponent } from './employee-form/employee-form.component';
 import { EmployeeDetailComponent } from './employee-detail/employee-detail.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { NgbPaginationModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ToastrModule } from 'ngx-toastr';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -22,6 +26,19 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
+    NgbModule,
+    NgbPaginationModule,
+    BrowserAnimationsModule,
+    ToastrModule.forRoot({
+      timeOut: 5000,
+      positionClass: 'toast-bottom-right',
+      progressBar: true,
+      closeButton: true,
+      tapToDismiss: true,
+      easeTime: 300,
+      newestOnTop: true,
+      preventDuplicates: true,
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent],

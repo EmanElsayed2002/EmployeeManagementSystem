@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XEGx6esNZFM=",
+  "dgSpecHash": "ZFZ786R/CHI=",
   "success": true,
-  "projectFilePath": "C:\\Users\\CONNECT\\source\\repos\\Task\\Infrastructure\\Infrastructure.csproj",
+  "projectFilePath": "C:\\EmployeeManagementSystem\\Backend with Asp.net Web Api\\Infrastructure\\Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\CONNECT\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\CONNECT\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

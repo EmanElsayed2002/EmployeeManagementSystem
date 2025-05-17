@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "k00BbEb5lhE=",
+  "dgSpecHash": "3SmcrYrgViI=",
   "success": true,
-  "projectFilePath": "C:\\Users\\CONNECT\\source\\repos\\Task\\Services\\Services.csproj",
+  "projectFilePath": "C:\\EmployeeManagementSystem\\Backend with Asp.net Web Api\\Services\\Services.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\CONNECT\\.nuget\\packages\\automapper\\14.0.0\\automapper.14.0.0.nupkg.sha512",
     "C:\\Users\\CONNECT\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",

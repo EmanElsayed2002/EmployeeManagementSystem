@@ -6,23 +6,26 @@ import {
 } from '../models/models.model';
 import { EmployeeService } from '../services/employee-service.service';
 import { Router } from '@angular/router';
+import { NgbPaginationConfig } from '@ng-bootstrap/ng-bootstrap';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-employee-list',
   templateUrl: './employee-list.component.html',
   styleUrl: './employee-list.component.css',
+  providers: [NgbPaginationConfig],
 })
 export class EmployeeListComponent {
   employees: Employee[] = [];
   paginatedResult: PaginatedResult<Employee> = {
     data: [],
-    totalCount: 0,
+    Total: 0,
     pageNumber: 1,
-    pageSize: 10,
+    pageSize: 5,
   };
   paginatedSearch: PaginatedSearch = {
     pageNumber: 1,
-    pageSize: 10,
+    pageSize: 5,
     key: '',
   };
   loading = false;
@@ -30,7 +33,8 @@ export class EmployeeListComponent {
 
   constructor(
     private employeeService: EmployeeService,
-    private router: Router
+    private router: Router,
+    private toaster: ToastrService
   ) {}
 
   ngOnInit(): void {
@@ -40,13 +44,13 @@ export class EmployeeListComponent {
   loadEmployees(): void {
     this.loading = true;
     this.employeeService.getPaginated(this.paginatedSearch).subscribe(
-      (result: PaginatedResult<Employee>) => {
+      (result: any) => {
         console.log(result);
-        this.paginatedResult.data = result.data;
-        this.paginatedResult.totalCount = result.data.length;
+        this.paginatedResult.data = result.data.readEmployeeDTOs;
+        this.paginatedResult.Total = result.data.total;
 
-        this.employees = result.data;
-        console.log(this.employees);
+        this.employees = result.data.readEmployeeDTOs;
+        console.log(this.employees, this.paginatedResult.Total);
         this.loading = false;
       },
       () => {
@@ -55,17 +59,21 @@ export class EmployeeListComponent {
       }
     );
   }
+  isSearching = false;
 
   onSearch(): void {
-    this.paginatedSearch.key = this.searchTerm;
-    this.paginatedSearch.pageNumber = 1;
-    this.employeeService.search(this.searchTerm).subscribe({
-      next: (result: any) => {
-        this.paginatedResult.data = result.data;
-        this.paginatedResult.totalCount = result.data.length;
+    this.isSearching = !!this.searchTerm;
 
-        this.employees = result.data;
-        console.log(this.employees);
+    this.paginatedSearch.key = this.searchTerm;
+
+    this.employeeService.search(this.paginatedSearch).subscribe({
+      next: (result: any) => {
+        console.log(result);
+        this.paginatedResult.data = result.data.readEmployeeDTOs;
+        this.paginatedResult.Total = result.data.total;
+
+        this.employees = result.data.readEmployeeDTOs;
+        console.log('this is seacrh', this.employees);
         this.loading = false;
       },
       error: () => {},
@@ -75,7 +83,13 @@ export class EmployeeListComponent {
 
   onPageChange(page: number): void {
     this.paginatedSearch.pageNumber = page;
-    this.loadEmployees();
+    this.paginatedResult.pageNumber = page;
+    if (this.isSearching) {
+      this.onSearch();
+    } else {
+      this.loadEmployees();
+    }
+    // this.loadEmployees();
   }
 
   viewEmployee(id: number): void {
@@ -90,10 +104,11 @@ export class EmployeeListComponent {
     if (confirm('Are you sure you want to delete this employee?')) {
       this.employeeService.deleteEmployee(id).subscribe(
         () => {
+          this.toaster.success('Employee Deleted Successfully', 'Success 🎉');
           this.loadEmployees();
         },
         () => {
-          console.error('Error deleting employee');
+          this.toaster.success('Error deleting employee', 'Error 😁');
         }
       );
     }

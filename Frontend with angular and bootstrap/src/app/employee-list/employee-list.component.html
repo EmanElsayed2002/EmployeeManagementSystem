@@ -86,45 +86,17 @@
           </tbody>
         </table>
       </div>
-
-      <nav *ngIf="paginatedResult.totalCount > 1">
-        <ul class="pagination justify-content-center">
-          <li
-            class="page-item"
-            [class.disabled]="paginatedResult.pageNumber === 1"
+      <div class="d-flex justify-content-center mt-4">
+        <div>
+          <ngb-pagination
+            [collectionSize]="paginatedResult.Total"
+            [(page)]="paginatedResult.pageNumber"
+            [pageSize]="paginatedResult.pageSize"
+            (pageChange)="onPageChange($event)"
           >
-            <a
-              class="page-link"
-              (click)="onPageChange(paginatedResult.pageNumber - 1)"
-            >
-              <i class="bi bi-chevron-left"></i>
-            </a>
-          </li>
-          <li
-            class="page-item"
-            *ngFor="
-              let page of [].constructor(paginatedResult.totalCount);
-              let i = index
-            "
-            [class.active]="paginatedResult.pageNumber === i + 1"
-          >
-            <a class="page-link" (click)="onPageChange(i + 1)">{{ i + 1 }}</a>
-          </li>
-          <li
-            class="page-item"
-            [class.disabled]="
-              paginatedResult.pageNumber === paginatedResult.totalCount
-            "
-          >
-            <a
-              class="page-link"
-              (click)="onPageChange(paginatedResult.pageNumber + 1)"
-            >
-              <i class="bi bi-chevron-right"></i>
-            </a>
-          </li>
-        </ul>
-      </nav>
+          </ngb-pagination>
+        </div>
+      </div>
     </div>
   </div>
 </div>

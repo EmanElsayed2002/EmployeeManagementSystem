@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\CONNECT\\source\\repos\\Task\\Data\\Data.csproj": {}
+    "C:\\EmployeeManagementSystem\\Backend with Asp.net Web Api\\Data\\Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\CONNECT\\source\\repos\\Task\\Data\\Data.csproj": {
+    "C:\\EmployeeManagementSystem\\Backend with Asp.net Web Api\\Data\\Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\CONNECT\\source\\repos\\Task\\Data\\Data.csproj",
+        "projectUniqueName": "C:\\EmployeeManagementSystem\\Backend with Asp.net Web Api\\Data\\Data.csproj",
         "projectName": "Data",
-        "projectPath": "C:\\Users\\CONNECT\\source\\repos\\Task\\Data\\Data.csproj",
+        "projectPath": "C:\\EmployeeManagementSystem\\Backend with Asp.net Web Api\\Data\\Data.csproj",
         "packagesPath": "C:\\Users\\CONNECT\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\CONNECT\\source\\repos\\Task\\Data\\obj\\",
+        "outputPath": "C:\\EmployeeManagementSystem\\Backend with Asp.net Web Api\\Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\CONNECT\\AppData\\Roaming\\NuGet\\NuGet.Config",

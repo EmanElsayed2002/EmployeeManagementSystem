@@ -34,8 +34,11 @@ export class EmployeeService {
     return this.http.delete(`${this.apiUrl}/DeleteEmpoyee/${id}`);
   }
 
-  search(key: string): Observable<Employee[]> {
-    let params = new HttpParams().set('key', key);
+  search(request: PaginatedSearch): Observable<Employee[]> {
+    let params = new HttpParams()
+      .set('key', request.key!)
+      .set('pageNumber', request.pageNumber.toString())
+      .set('pageSize', request.pageSize.toString());
     return this.http.get<Employee[]>(`${this.apiUrl}/Search`, { params });
   }
 
@@ -45,10 +48,6 @@ export class EmployeeService {
     let params = new HttpParams()
       .set('pageNumber', request.pageNumber.toString())
       .set('pageSize', request.pageSize.toString());
-
-    if (request.key) {
-      params = params.set('searchTerm', request.key);
-    }
 
     return this.http.get<PaginatedResult<Employee>>(
       `${this.apiUrl}/Paginated`,

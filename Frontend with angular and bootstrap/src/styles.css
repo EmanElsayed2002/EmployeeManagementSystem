@@ -1,1 +1,217 @@
-/* You can add global styles to this file, and also import other style files */
+.toast-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 5px;
+  z-index: 9999;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, sans-serif;
+}
+
+.ngx-toastr {
+  position: relative;
+  width: 350px;
+  min-height: 60px;
+  padding: 18px 22px 18px 20px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.08);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+  opacity: 0.98;
+  backdrop-filter: blur(8px);
+}
+
+/* Toast close button */
+.toast-close-button {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  color: rgba(255, 255, 255, 0.85);
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  font-size: 16px;
+  font-weight: normal;
+  cursor: pointer;
+  padding: 2px 6px;
+  line-height: 1;
+  border-radius: 50%;
+  height: 24px;
+  width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.toast-close-button:hover {
+  color: white;
+  background: rgba(255, 255, 255, 0.25);
+  transform: rotate(90deg);
+}
+
+/* Toast content */
+.toast-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  padding-right: 24px;
+  letter-spacing: 0.2px;
+}
+
+.toast-message {
+  font-size: 14px;
+  line-height: 1.5;
+  white-space: pre-line;
+  opacity: 0.92;
+  font-weight: 400;
+}
+
+/* Toast types with subtle icon indicator */
+.toast-success {
+  background: linear-gradient(135deg, #28a745, #22c03c);
+  border-left: none;
+  position: relative;
+}
+
+.toast-success::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.toast-error {
+  background: linear-gradient(135deg, #dc3545, #e83d56);
+  border-left: none;
+  position: relative;
+}
+
+.toast-error::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.toast-info {
+  background: linear-gradient(135deg, #17a2b8, #0bb8d4);
+  border-left: none;
+  position: relative;
+}
+
+.toast-info::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.toast-warning {
+  background: linear-gradient(135deg, #ffc107, #ffca28);
+  border-left: none;
+  color: #212529;
+  position: relative;
+}
+
+.toast-warning::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background-color: rgba(33, 37, 41, 0.3);
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.toast-warning .toast-close-button {
+  color: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.08);
+}
+
+.toast-warning .toast-close-button:hover {
+  color: #000;
+  background: rgba(0, 0, 0, 0.15);
+}
+
+/* Animations */
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 0.98;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeOutRight {
+  from {
+    opacity: 0.98;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+}
+
+.ngx-toastr {
+  animation: fadeInRight 0.4s cubic-bezier(0.18, 0.89, 0.32, 1.28) forwards;
+}
+
+.ngx-toastr.ngx-toastr-leave {
+  animation: fadeOutRight 0.3s ease-in forwards;
+}
+
+/* Add subtle hover effect */
+.ngx-toastr:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18), 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+/* Responsive styles */
+@media (max-width: 576px) {
+  .toast-container {
+    width: 90%;
+    left: 5%;
+    right: 5%;
+    top: 10px;
+  }
+
+  .ngx-toastr {
+    width: 100%;
+  }
+}
+/* styles.css or styles.scss */
+.toast-success {
+  background-color: #198754 !important; /* Bootstrap green */
+  color: #fff !important;
+  border-radius: 10px !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.toast-progress {
+  background-color: #ffffffaa !important;
+}

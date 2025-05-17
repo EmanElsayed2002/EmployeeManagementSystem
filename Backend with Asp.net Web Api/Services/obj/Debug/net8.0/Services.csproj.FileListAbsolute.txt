@@ -16,3 +16,21 @@ C:\Users\CONNECT\source\repos\Task\Services\obj\Debug\net8.0\Services.dll
 C:\Users\CONNECT\source\repos\Task\Services\obj\Debug\net8.0\refint\Services.dll
 C:\Users\CONNECT\source\repos\Task\Services\obj\Debug\net8.0\Services.pdb
 C:\Users\CONNECT\source\repos\Task\Services\obj\Debug\net8.0\ref\Services.dll
+C:\EmployeeManagementSystem\Backend with Asp.net Web Api\Services\bin\Debug\net8.0\Services.deps.json
+C:\EmployeeManagementSystem\Backend with Asp.net Web Api\Services\bin\Debug\net8.0\Services.dll
+C:\EmployeeManagementSystem\Backend with Asp.net Web Api\Services\bin\Debug\net8.0\Services.pdb
+C:\EmployeeManagementSystem\Backend with Asp.net Web Api\Services\bin\Debug\net8.0\Data.dll
+C:\EmployeeManagementSystem\Backend with Asp.net Web Api\Services\bin\Debug\net8.0\Infrastructure.dll
+C:\EmployeeManagementSystem\Backend with Asp.net Web Api\Services\bin\Debug\net8.0\Data.pdb
+C:\EmployeeManagementSystem\Backend with Asp.net Web Api\Services\bin\Debug\net8.0\Infrastructure.pdb
+C:\EmployeeManagementSystem\Backend with Asp.net Web Api\Services\obj\Debug\net8.0\Services.csproj.AssemblyReference.cache
+C:\EmployeeManagementSystem\Backend with Asp.net Web Api\Services\obj\Debug\net8.0\Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\EmployeeManagementSystem\Backend with Asp.net Web Api\Services\obj\Debug\net8.0\Services.AssemblyInfoInputs.cache
+C:\EmployeeManagementSystem\Backend with Asp.net Web Api\Services\obj\Debug\net8.0\Services.AssemblyInfo.cs
+C:\EmployeeManagementSystem\Backend with Asp.net Web Api\Services\obj\Debug\net8.0\Services.csproj.CoreCompileInputs.cache
+C:\EmployeeManagementSystem\Backend with Asp.net Web Api\Services\obj\Debug\net8.0\Services.sourcelink.json
+C:\EmployeeManagementSystem\Backend with Asp.net Web Api\Services\obj\Debug\net8.0\Services.csproj.Up2Date
+C:\EmployeeManagementSystem\Backend with Asp.net Web Api\Services\obj\Debug\net8.0\Services.dll
+C:\EmployeeManagementSystem\Backend with Asp.net Web Api\Services\obj\Debug\net8.0\refint\Services.dll
+C:\EmployeeManagementSystem\Backend with Asp.net Web Api\Services\obj\Debug\net8.0\Services.pdb
+C:\EmployeeManagementSystem\Backend with Asp.net Web Api\Services\obj\Debug\net8.0\ref\Services.dll

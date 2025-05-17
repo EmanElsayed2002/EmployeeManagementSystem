@@ -16,3 +16,21 @@ C:\Users\CONNECT\source\repos\Task\Infrastructure\obj\Debug\net8.0\refint\Infras
 C:\Users\CONNECT\source\repos\Task\Infrastructure\obj\Debug\net8.0\Infrastructure.pdb
 C:\Users\CONNECT\source\repos\Task\Infrastructure\obj\Debug\net8.0\Infrastructure.genruntimeconfig.cache
 C:\Users\CONNECT\source\repos\Task\Infrastructure\obj\Debug\net8.0\ref\Infrastructure.dll
+C:\EmployeeManagementSystem\Backend with Asp.net Web Api\Infrastructure\bin\Debug\net8.0\Infrastructure.deps.json
+C:\EmployeeManagementSystem\Backend with Asp.net Web Api\Infrastructure\bin\Debug\net8.0\Infrastructure.runtimeconfig.json
+C:\EmployeeManagementSystem\Backend with Asp.net Web Api\Infrastructure\bin\Debug\net8.0\Infrastructure.dll
+C:\EmployeeManagementSystem\Backend with Asp.net Web Api\Infrastructure\bin\Debug\net8.0\Infrastructure.pdb
+C:\EmployeeManagementSystem\Backend with Asp.net Web Api\Infrastructure\bin\Debug\net8.0\Data.dll
+C:\EmployeeManagementSystem\Backend with Asp.net Web Api\Infrastructure\bin\Debug\net8.0\Data.pdb
+C:\EmployeeManagementSystem\Backend with Asp.net Web Api\Infrastructure\obj\Debug\net8.0\Infrastructure.csproj.AssemblyReference.cache
+C:\EmployeeManagementSystem\Backend with Asp.net Web Api\Infrastructure\obj\Debug\net8.0\Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\EmployeeManagementSystem\Backend with Asp.net Web Api\Infrastructure\obj\Debug\net8.0\Infrastructure.AssemblyInfoInputs.cache
+C:\EmployeeManagementSystem\Backend with Asp.net Web Api\Infrastructure\obj\Debug\net8.0\Infrastructure.AssemblyInfo.cs
+C:\EmployeeManagementSystem\Backend with Asp.net Web Api\Infrastructure\obj\Debug\net8.0\Infrastructure.csproj.CoreCompileInputs.cache
+C:\EmployeeManagementSystem\Backend with Asp.net Web Api\Infrastructure\obj\Debug\net8.0\Infrastructure.sourcelink.json
+C:\EmployeeManagementSystem\Backend with Asp.net Web Api\Infrastructure\obj\Debug\net8.0\Infrastr.15EFFBFE.Up2Date
+C:\EmployeeManagementSystem\Backend with Asp.net Web Api\Infrastructure\obj\Debug\net8.0\Infrastructure.dll
+C:\EmployeeManagementSystem\Backend with Asp.net Web Api\Infrastructure\obj\Debug\net8.0\refint\Infrastructure.dll
+C:\EmployeeManagementSystem\Backend with Asp.net Web Api\Infrastructure\obj\Debug\net8.0\Infrastructure.pdb
+C:\EmployeeManagementSystem\Backend with Asp.net Web Api\Infrastructure\obj\Debug\net8.0\Infrastructure.genruntimeconfig.cache
+C:\EmployeeManagementSystem\Backend with Asp.net Web Api\Infrastructure\obj\Debug\net8.0\ref\Infrastructure.dll
